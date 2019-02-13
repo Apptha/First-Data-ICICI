@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Apptha_FirstDataICICI</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v.3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>First Data (ICICI) is Payment Gateway for ICICI Bank.&#xD;
+</summary>
+    <description>First Data (ICICI) is Payment Gateway for ICICI Bank.&#xD;
+</description>
+    <notes>First Data (ICICI) is Payment Gateway for ICICI Bank.</notes>
+    <authors><author><name>apptha</name><user>apptha</user><email>info@apptha.com</email></author></authors>
+    <date>2015-07-29</date>
+    <time>05:53:29</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Apptha_FirstDataICICI.xml" hash="ed678b19598961969c570d52b2ea17e2"/></dir></target><target name="magelocal"><dir name="Apptha"><dir name="FirstDataICICI"><dir name="Block"><file name="Form.php" hash="44e377b0c195a2dbf8467f4921519fe9"/><file name="Info.php" hash="d38fdef7bd563920367051d399afbec2"/></dir><dir name="Helper"><file name="Data.php" hash="7435d08ec93bce98ca879731e888dc5b"/></dir><dir name="Model"><file name="Payment.php" hash="178db6cfdbc0b04ff4f6d8f8c7fadd9e"/><file name="Status.php" hash="37fa2a8970e87218593e8cda6e28be4f"/><dir name="System"><dir name="Order"><file name="Status.php" hash="d3d782ac39f63532dbe932d774f7edd2"/></dir></dir></dir><dir name="controllers"><file name="ProcessingController.php" hash="ad1e0d2ab352bee5e7c916b96ffb3b10"/></dir><dir name="etc"><file name="config.xml" hash="f220d0d7b1730a9427781e3843f2ab9c"/><file name="system.xml" hash="cdd245c183df25b08db36ed2ffe3297e"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="firstdata_icici"><file name="info.phtml" hash="ed8b75d01b053dabef25faabd189b6b3"/><dir name="pdf"><file name="info.phtml" hash="3fcf8756bfab4a996abd2cec72f6c6e7"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="firstdata_icici"><file name="form.phtml" hash="a8e2511cc4a011407f01b0c6eb69e190"/><file name="info.phtml" hash="ed8b75d01b053dabef25faabd189b6b3"/></dir></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="Apptha_FirstDataICICI.csv" hash="2e6304b69b8adc2b0dbed474f43dcb8b"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

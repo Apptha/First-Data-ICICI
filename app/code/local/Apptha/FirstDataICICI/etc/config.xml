@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Apptha
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the EULA
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://www.apptha.com/LICENSE.txt
+*
+* ==============================================================
+*                 MAGENTO EDITION USAGE NOTICE
+* ==============================================================
+* This package designed for Magento COMMUNITY edition
+* Apptha does not guarantee correct work of this extension
+* on any other Magento edition except Magento COMMUNITY edition.
+* Apptha does not provide extension support in case of
+* incorrect edition usage.
+* ==============================================================
+*
+* @category    Apptha
+* @package     Apptha_FirstDataICICI
+* @version     0.1.0
+* @author      Apptha Team <developers@contus.in>
+* @copyright   Copyright (c) 2014 Apptha. (http://www.apptha.com)
+* @license     http://www.apptha.com/LICENSE.txt
+* 
+*/
+-->
+
+<config>
+    <modules>
+        <Apptha_FirstDataICICI>
+            <version>0.1.0</version>
+        </Apptha_FirstDataICICI>
+    </modules>
+    <frontend>
+        <routers>
+            <firstdataicici>
+                <use>standard</use>
+                <args>
+                    <module>Apptha_FirstDataICICI</module>
+                    <frontName>firstdataicici</frontName>
+                </args>
+            </firstdataicici>
+        </routers>
+        <secure_url>
+            <firstdataicici>/firstdataicici/</firstdataicici>
+        </secure_url>
+        <translate>
+            <modules>
+                <Apptha_FirstDataICICI>
+                    <files>
+                        <default>Apptha_FirstDataICICI.csv</default>
+                    </files>
+                </Apptha_FirstDataICICI>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Apptha_FirstDataICICI>
+                    <files>
+                        <default>Apptha_FirstDataICICI.csv</default>
+                    </files>
+                </Apptha_FirstDataICICI>
+            </modules>
+        </translate>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <firstdataicici translate="title" module="firstdataicici">
+                                            <title>First Data ICICI Payment Settings</title>
+                                        </firstdataicici>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <global>
+        <models>
+            <firstdataicici>
+                <class>Apptha_FirstDataICICI_Model</class>
+            </firstdataicici>
+        </models>
+        <resources>
+            <firstdataicici_setup>
+                <setup>
+                    <module>Apptha_FirstDataICICI</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </firstdataicici_setup>
+            <firstdataicici_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </firstdataicici_write>
+            <firstdataicici_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </firstdataicici_read>
+        </resources>
+        <blocks>
+            <firstdataicici>
+                <class>Apptha_FirstDataICICI_Block</class>
+            </firstdataicici>
+           
+        </blocks>
+        
+        <helpers>
+            <firstdataicici>
+                <class>Apptha_FirstDataICICI_Helper</class>
+            </firstdataicici>
+        </helpers>
+        
+    </global>
+    <default>
+        <payment>
+            <firstdataicici>
+                <model>firstdataicici/Payment</model>
+                <title>First Data (ICICI)</title>
+            </firstdataicici>
+        </payment>
+    </default>
+</config>
